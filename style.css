@@ -1,0 +1,93 @@
+.button {
+  background-color: #4267B2;
+  border: 0px;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #4267B2;
+  border: 1px solid;
+  border-color: #4267B2;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.inv {
+  display: none;
+}
+
+.square-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+  
+.square {
+  position: relative;
+  flex-basis: calc(20% - 10px);
+  margin: 5px;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+.square-thirds {
+  position: relative;
+  flex-basis: calc(33.3% - 10px);
+  margin: 5px;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+  
+.square::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+  
+.square .content {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.square-thirds::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+  
+.square-thirds .content {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.blue {
+  background-color: #4267B2;
+}
+
+.blue:hover {
+  background-color: #fff;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.white:hover {
+  background-color: #4267B2;
+}
